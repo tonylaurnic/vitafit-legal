@@ -11,48 +11,70 @@
   <nav><a href="./">Supporto</a><a href="privacy.html">Privacy</a><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Termini d'uso</a></nav>
 
   <h1>Informativa sulla privacy</h1>
-  <p class="muted">Ultimo aggiornamento: 16 ottobre 2026 · <a href="#en">English below</a></p>
+  <p class="muted">Ultimo aggiornamento: 18 novembre 2026 · <a href="#en">English below</a></p>
 
   <h2>Titolare del trattamento</h2>
   <p>Antoniu Stratulat, sviluppatore di vitaFit. Contatto: <a href="mailto:tonylaurnic@gmail.com">tonylaurnic@gmail.com</a>.</p>
 
   <h2>In breve</h2>
   <ul>
-    <li>I tuoi dati di salute (peso, digiuni, profilo, menu) restano sul tuo dispositivo.</li>
+    <li>I tuoi dati di salute (peso, digiuni, profilo, menu, dati della modalità GLP-1) restano sul tuo dispositivo.</li>
     <li>Non c'è pubblicità, non tracciamo l'utente tra app e siti e non vendiamo dati.</li>
-    <li>Solo quando generi un menu con l'AI inviamo le preferenze del menu al servizio AI di Google.</li>
+    <li>Solo quando usi una funzione AI (menu, stima di un pasto, analisi di una foto) inviamo al servizio AI di Google i dati strettamente necessari a quella richiesta.</li>
+    <li>La modalità GLP-1 è facoltativa e si attiva solo con il tuo consenso esplicito, che puoi revocare in qualsiasi momento.</li>
   </ul>
 
   <h2>Dati salvati sul dispositivo</h2>
-  <p>Profilo (sesso, età, altezza, peso, livello di attività, obiettivo), registrazioni del peso, sessioni di digiuno, preferenze e menu generati
+  <p>Profilo (sesso, età, altezza, peso, livello di attività, obiettivo), registrazioni del peso, sessioni di digiuno, foto di progresso, pasti registrati, preferenze e menu generati
     sono salvati solo nella memoria locale dell'app. Non li riceviamo e non li conserviamo su nostri server.
     Puoi esportarli (Impostazioni → Esporta dati) o cancellarli (Impostazioni → Ripristina app, oppure disinstallando l'app).</p>
 
-  <h2>Apple Salute</h2>
-  <p>Se lo autorizzi, vitaFit legge passi e allenamenti da Apple Salute e vi salva i pesi che registri.
-    Questi dati sono usati solo dentro l'app, non vengono inviati a terzi e non sono usati per pubblicità.</p>
+  <h2>Modalità GLP-1 (dati sanitari)</h2>
+  <p>Se scegli di attivare la modalità GLP-1, l'app tratta dati relativi alla salute ai sensi dell'art. 9 del GDPR:
+    l'uso di un farmaco GLP-1 e il suo tipo, il giorno dell'iniezione settimanale, la data di inizio, i sintomi che segni ogni giorno
+    (es. nausea, sazietà, stitichezza, reflusso), gli obiettivi di proteine, fibre e acqua e i pasti che registri.</p>
+  <ul>
+    <li><strong>Base giuridica:</strong> il tuo consenso esplicito (art. 9, par. 2, lett. a GDPR), richiesto prima di salvare qualsiasi dato.</li>
+    <li><strong>Dove sono:</strong> solo sul tuo dispositivo. Non li riceviamo su nostri server.</li>
+    <li><strong>Cosa inviamo all'AI:</strong> quando generi un menu GLP-1 inviamo solo le indicazioni per la ricetta: obiettivi di proteine e fibre, la richiesta di porzioni piccole e i sintomi di oggi in forma di testo (es. "nausea").
+      <strong>Non inviamo</strong> il nome del farmaco, il giorno dell'iniezione, il peso, il nome o l'email.</li>
+    <li><strong>Promemoria:</strong> le notifiche (iniezione, acqua, proteine) sono programmate sul dispositivo, senza server.</li>
+    <li><strong>Diario PDF:</strong> viene creato sul dispositivo. Sei tu a decidere se e con chi condividerlo.</li>
+    <li><strong>Revoca:</strong> puoi revocare il consenso in qualsiasi momento disattivando la modalità GLP-1 nelle Impostazioni. Disattivandola, i dati sanitari della modalità GLP-1 vengono cancellati dal dispositivo.</li>
+  </ul>
+  <p>vitaFit non è un dispositivo medico e non fornisce indicazioni su dosi, farmaci o diagnosi.</p>
 
-  <h2>Generazione dei menu con AI (vitaFit Pro)</h2>
-  <p>Quando chiedi un menu, inviamo al servizio Gemini di Google, tramite Firebase AI Logic, solo i parametri del menu:
-    calorie obiettivo, ripartizione dei macronutrienti, numero di pasti e di giorni, allergie o alimenti esclusi che indichi, preferenze di cucina e lingua.
-    Non inviamo nome, email, peso o altri dati di salute. La richiesta serve solo a generare la risposta.
+  <h2>Apple Salute e Health Connect</h2>
+  <p>Se lo autorizzi, vitaFit legge passi e allenamenti da Apple Salute (iOS) o Google Health Connect (Android) e vi salva i pesi che registri.
+    Questi dati sono usati solo dentro l'app, non vengono inviati a terzi, non sono inviati al servizio AI e non sono usati per pubblicità.</p>
+
+  <h2>Funzioni AI</h2>
+  <p>Le funzioni AI usano il servizio Gemini di Google tramite Firebase AI Logic. Ogni richiesta contiene solo i dati necessari a quella funzione:</p>
+  <ul>
+    <li><strong>Menu:</strong> calorie obiettivo, ripartizione dei macronutrienti, numero di pasti e di giorni, allergie o alimenti esclusi che indichi, preferenze di cucina, lingua e, se attiva, le indicazioni della modalità GLP-1 descritte sopra.</li>
+    <li><strong>Stima di un pasto:</strong> la foto del piatto che scatti, oppure il nome e il peso del cibo che scrivi.</li>
+    <li><strong>Analisi delle foto di progresso:</strong> la foto del corpo che scegli di analizzare ed eventualmente la foto precedente per il confronto.
+      Invia solo foto in cui non sei riconoscibile, se preferisci (ad esempio senza il viso).</li>
+  </ul>
+  <p>Non inviamo nome, email o altri dati del profilo. La richiesta serve solo a generare la risposta.
     Il trattamento avviene secondo i termini di Google: <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
 
   <h2>Identificativo anonimo e sicurezza</h2>
   <p>Per proteggere il servizio AI da abusi l'app usa:</p>
   <ul>
     <li><strong>Firebase Authentication (accesso anonimo)</strong>: crea un identificativo casuale non collegato alla tua identità, usato per limitare il numero di richieste per utente.</li>
-    <li><strong>Firebase App Check</strong> (Apple App Attest / DeviceCheck): verifica che le richieste arrivino dall'app autentica.</li>
+    <li><strong>Firebase App Check</strong> (Apple App Attest / DeviceCheck su iOS, Play Integrity su Android): verifica che le richieste arrivino dall'app autentica.</li>
   </ul>
   <p>Fornitore: Google Ireland Ltd / Google LLC.</p>
 
   <h2>Abbonamenti</h2>
-  <p>I pagamenti sono gestiti da Apple: non riceviamo mai i dati della tua carta.
+  <p>I pagamenti sono gestiti da Apple o da Google Play: non riceviamo mai i dati della tua carta.
     Per verificare lo stato dell'abbonamento usiamo <strong>RevenueCat</strong> (RevenueCat, Inc.), che riceve l'identificativo anonimo dell'app
-    e lo storico degli acquisti forniti da Apple. <a href="https://www.revenuecat.com/privacy">Privacy di RevenueCat</a>.</p>
+    e lo storico degli acquisti forniti dallo store. <a href="https://www.revenuecat.com/privacy">Privacy di RevenueCat</a>.</p>
 
   <h2>Base giuridica e conservazione</h2>
-  <p>Trattiamo i dati per fornirti il servizio che richiedi (esecuzione del contratto) e per proteggerlo dagli abusi (legittimo interesse).
+  <p>Trattiamo i dati per fornirti il servizio che richiedi (esecuzione del contratto), per proteggerlo dagli abusi (legittimo interesse)
+    e, per i dati della modalità GLP-1, sulla base del tuo consenso esplicito.
     L'identificativo anonimo e i dati di acquisto sono conservati finché usi l'app o fino alla tua richiesta di cancellazione,
     salvo obblighi di legge.</p>
 
@@ -60,8 +82,9 @@
   <p>Google e RevenueCat possono trattare dati negli Stati Uniti, con le garanzie previste dal GDPR (Clausole Contrattuali Standard e/o EU-US Data Privacy Framework).</p>
 
   <h2>I tuoi diritti</h2>
-  <p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità o opporti al trattamento scrivendo a
-    <a href="mailto:tonylaurnic@gmail.com">tonylaurnic@gmail.com</a>. Puoi anche presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
+  <p>Puoi chiedere accesso, rettifica, cancellazione, limitazione, portabilità o opporti al trattamento, e revocare il consenso in qualsiasi momento, scrivendo a
+    <a href="mailto:tonylaurnic@gmail.com">tonylaurnic@gmail.com</a>. La revoca non pregiudica la liceità del trattamento basato sul consenso prima della revoca.
+    Puoi anche presentare reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>).</p>
 
   <h2>Minori</h2>
   <p>vitaFit non è destinata a persone sotto i 16 anni.</p>
@@ -73,41 +96,63 @@
 
   <section id="en" lang="en">
     <h1>Privacy Policy</h1>
-    <p class="muted">Last updated: October 16, 2026</p>
+    <p class="muted">Last updated: November 18, 2026</p>
 
     <h2>Controller</h2>
     <p>Antoniu Stratulat, developer of vitaFit. Contact: <a href="mailto:tonylaurnic@gmail.com">tonylaurnic@gmail.com</a>.</p>
 
     <h2>Summary</h2>
     <ul>
-      <li>Your health data (weight, fasts, profile, meal plans) stays on your device.</li>
+      <li>Your health data (weight, fasts, profile, meal plans, GLP-1 mode data) stays on your device.</li>
       <li>No ads, no cross-app tracking, no sale of data.</li>
-      <li>Only when you generate an AI meal plan do we send the meal plan settings to Google's AI service.</li>
+      <li>Only when you use an AI feature (meal plan, meal estimate, photo analysis) do we send Google's AI service the data strictly needed for that request.</li>
+      <li>GLP-1 mode is optional and is enabled only with your explicit consent, which you can withdraw at any time.</li>
     </ul>
 
     <h2>Data stored on your device</h2>
-    <p>Profile, weight logs, fasting sessions, preferences and generated meal plans are stored only in the app's local storage. We do not receive or store them on our servers. You can export them (Settings → Export data) or delete them (Settings → Reset app, or by uninstalling).</p>
+    <p>Profile, weight logs, fasting sessions, progress photos, logged meals, preferences and generated meal plans are stored only in the app's local storage. We do not receive or store them on our servers. You can export them (Settings → Export data) or delete them (Settings → Reset app, or by uninstalling).</p>
 
-    <h2>Apple Health</h2>
-    <p>With your permission vitaFit reads steps and workouts from Apple Health and writes the weights you log. This data is used only inside the app, is never shared with third parties and is never used for advertising.</p>
+    <h2>GLP-1 mode (health data)</h2>
+    <p>If you choose to enable GLP-1 mode, the app processes data concerning health under Art. 9 GDPR: that you use a GLP-1 medication and its type, your weekly injection day, start date, the symptoms you log each day (e.g. nausea, fullness, constipation, reflux), your protein, fiber and water targets and the meals you log.</p>
+    <ul>
+      <li><strong>Legal basis:</strong> your explicit consent (Art. 9(2)(a) GDPR), requested before any data is stored.</li>
+      <li><strong>Where it is:</strong> only on your device. We do not receive it on our servers.</li>
+      <li><strong>What is sent to the AI:</strong> when you generate a GLP-1 meal plan we send only the recipe instructions: protein and fiber targets, the request for small portions and today's symptoms as text (e.g. "nausea"). We <strong>do not send</strong> the medication name, injection day, weight, name or email.</li>
+      <li><strong>Reminders:</strong> notifications (injection, water, protein) are scheduled on the device, without servers.</li>
+      <li><strong>PDF diary:</strong> created on the device. You decide whether and with whom to share it.</li>
+      <li><strong>Withdrawal:</strong> you can withdraw consent at any time by turning off GLP-1 mode in Settings. Turning it off deletes the GLP-1 health data from the device.</li>
+    </ul>
+    <p>vitaFit is not a medical device and gives no advice on doses, medications or diagnosis.</p>
 
-    <h2>AI meal plans (vitaFit Pro)</h2>
-    <p>When you request a meal plan we send to Google Gemini, via Firebase AI Logic, only the meal plan settings: calorie target, macronutrient split, number of meals and days, allergies or excluded foods you enter, cuisine preferences and language. We do not send your name, email, weight or other health data. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
+    <h2>Apple Health and Health Connect</h2>
+    <p>With your permission vitaFit reads steps and workouts from Apple Health (iOS) or Google Health Connect (Android) and writes the weights you log. This data is used only inside the app, is never shared with third parties, is never sent to the AI service and is never used for advertising.</p>
+
+    <h2>AI features</h2>
+    <p>AI features use Google Gemini via Firebase AI Logic. Each request contains only the data needed for that feature:</p>
+    <ul>
+      <li><strong>Meal plans:</strong> calorie target, macronutrient split, number of meals and days, allergies or excluded foods you enter, cuisine preferences, language and, if enabled, the GLP-1 instructions described above.</li>
+      <li><strong>Meal estimate:</strong> the photo of the plate you take, or the food name and weight you type.</li>
+      <li><strong>Progress photo analysis:</strong> the body photo you choose to analyze and, if any, the previous photo for comparison. If you prefer, only send photos where you cannot be identified (for example without your face).</li>
+    </ul>
+    <p>We do not send your name, email or other profile data. The request is used only to generate the response. See <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a>.</p>
 
     <h2>Anonymous identifier and security</h2>
-    <p>To protect the AI service from abuse the app uses Firebase Authentication (anonymous sign-in, a random identifier not linked to your identity, used for per-user rate limits) and Firebase App Check (Apple App Attest / DeviceCheck). Provider: Google.</p>
+    <p>To protect the AI service from abuse the app uses Firebase Authentication (anonymous sign-in, a random identifier not linked to your identity, used for per-user rate limits) and Firebase App Check (Apple App Attest / DeviceCheck on iOS, Play Integrity on Android). Provider: Google.</p>
 
     <h2>Subscriptions</h2>
-    <p>Payments are processed by Apple; we never receive your card details. Subscription status is verified with RevenueCat, Inc., which receives the app's anonymous identifier and the purchase history provided by Apple. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy</a>.</p>
+    <p>Payments are processed by Apple or Google Play; we never receive your card details. Subscription status is verified with RevenueCat, Inc., which receives the app's anonymous identifier and the purchase history provided by the store. <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy</a>.</p>
 
     <h2>Legal basis, retention and transfers</h2>
-    <p>We process data to provide the service you request and to protect it from abuse. The anonymous identifier and purchase data are kept while you use the app or until you ask for deletion, unless the law requires otherwise. Google and RevenueCat may process data in the United States under GDPR safeguards (Standard Contractual Clauses and/or the EU-US Data Privacy Framework).</p>
+    <p>We process data to provide the service you request, to protect it from abuse and, for GLP-1 mode data, on the basis of your explicit consent. The anonymous identifier and purchase data are kept while you use the app or until you ask for deletion, unless the law requires otherwise. Google and RevenueCat may process data in the United States under GDPR safeguards (Standard Contractual Clauses and/or the EU-US Data Privacy Framework).</p>
 
     <h2>Your rights</h2>
-    <p>You can request access, correction, deletion, restriction, portability or object to processing by emailing <a href="mailto:tonylaurnic@gmail.com">tonylaurnic@gmail.com</a>, and you can lodge a complaint with your data protection authority.</p>
+    <p>You can request access, correction, deletion, restriction, portability, object to processing and withdraw consent at any time by emailing <a href="mailto:tonylaurnic@gmail.com">tonylaurnic@gmail.com</a>. Withdrawal does not affect the lawfulness of processing before it. You can lodge a complaint with your data protection authority.</p>
 
     <h2>Children</h2>
     <p>vitaFit is not intended for people under 16.</p>
+
+    <h2>Changes</h2>
+    <p>Any changes will be published on this page with the update date.</p>
   </section>
 </main>
 </body>
